@@ -7,6 +7,7 @@
   --white-text-color-op: rgba(255, 255, 255, 0.6);
   --gray-button-portfolio: rgb(245, 244, 250);
   --hero-footer-main-page: rgb(47, 48, 58);
+  --icon-color-gray: rgb(175, 177, 184);
   --examples-gap: 30px;
 }
 
@@ -135,6 +136,7 @@ header {
 
 .icon-contacts {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .icon-contacts:hover,
@@ -303,19 +305,82 @@ header {
 
 .team-text {
   color: var(--paragraph-text-color);
+  margin-bottom: 16px;
 }
+
+.socials-list{
+  display: flex;
+  margin-right: -10px;
+}
+
+.socials-item{
+  flex-basis: calc(100% / 4 - 10px);
+  margin-right: 10px;
+}
+
+.socials-link{
+  display: block;
+  
+}
+
+.thumb-socials{
+  display: flex;
+  color: var(--icon-color-gray);
+  background-color: white;
+  border-radius: 50%; 
+}
+
+.thumb-link:hover{
+  color: white;
+  background-color: blue;
+}
+
+.icon-socials{
+  fill: currentColor;
+}
+
+
+.icon-socials:hover,
+.icon-socials:focus{
+  fill: currentColor;
+} 
+
 
 /* Наши клиенты */
 .clients {
   display: flex;
+  margin-right: calc(-1 * var(--examples-gap));
+}
+
+.clients-item {
+  flex-basis: calc(100% / 6 - var(--examples-gap));
+  margin-right: var(--examples-gap);
 }
 
 .our-clients {
-  display: inline-block;
-  width: 170px;
+  display: block;
+  
+}
+
+.thumb-clients {
+  display: flex;
   justify-content: center;
   align-items: center;
-  outline: 1px solid rgb(175, 177, 184);
+  height: 90px;
+  color: var(--icon-color-gray);
+  border: 1px solid rgb(175, 177, 184);
+  border-radius: 4px;
+}
+
+.icon-clients {
+  fill: currentColor;
+}
+
+.thumb-clients:hover,
+.thumb-clients:focus {
+  color: var(--logo-text-color);
+  border: 1px solid var(--logo-text-color));
+
 }
 
 /* Оформление футера */
