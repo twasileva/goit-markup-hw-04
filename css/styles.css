@@ -225,6 +225,10 @@ header {
   display: flex;
 }
 
+.features-element {
+  flex-basis: calc(100% / 4 - 30px);
+}
+
 .features-heading {
   margin-bottom: 10px;
   font-size: 14px;
@@ -235,16 +239,25 @@ header {
 .features-items {
   display: flex;
   width: 270px;
-
   color: var(--paragraph-text-color);
   font-size: 14px;
   line-height: 1.71;
 }
 
-.features-element:not(:last-child),
 .works-item:not(:last-child),
 .team-element:not(:last-child) {
   margin-right: 30px;
+}
+
+.thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: var(--gray-button-portfolio);
 }
 
 /* Чем мы занимаемся */
@@ -290,6 +303,19 @@ header {
 
 .team-text {
   color: var(--paragraph-text-color);
+}
+
+/* Наши клиенты */
+.clients {
+  display: flex;
+}
+
+.our-clients {
+  display: inline-block;
+  width: 170px;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid rgb(175, 177, 184);
 }
 
 /* Оформление футера */
