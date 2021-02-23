@@ -86,6 +86,8 @@ header {
 
   font-size: 26px;
   line-height: 1.19;
+
+  outline: none;
 }
 
 .logo-part {
@@ -118,6 +120,7 @@ header {
 .nav-items:hover,
 .nav-items:focus {
   color: var(--logo-text-color);
+  outline: none;
 }
 
 .nav-items.current {
@@ -203,6 +206,7 @@ header {
 .hero-button:hover,
 .hero-button:focus {
   color: var(--white-text-color-op);
+  outline: none;
 }
 
 /* Преимушества */
@@ -308,17 +312,17 @@ header {
   margin-bottom: 16px;
 }
 
-.socials-list{
+.socials-list {
   display: flex;
   margin-right: -10px;
 }
 
-.socials-item{
+.socials-item {
   flex-basis: calc(100% / 4 - 10px);
   margin-right: 10px;
 }
 
-.socials-link{
+.socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,15 +331,16 @@ header {
   background-color: var(--white-text-color);
   fill: var(--icon-color-gray);
   border-radius: 50%;
-
 }
 
-.socials-link:hover{
-  fill: white;
-  background-color: blue;
+.socials-link:hover,
+.socials-link:focus {
+  fill: var(--white-text-color);
+  background-color: var(--logo-text-color);
+  outline: none;
 }
 
-.icon-socials{
+.icon-socials {
   width: 20px;
   height: 20px;
 }
@@ -353,7 +358,6 @@ header {
 
 .our-clients {
   display: block;
-  
 }
 
 .thumb-clients {
@@ -373,8 +377,8 @@ header {
 .thumb-clients:hover,
 .thumb-clients:focus {
   color: var(--logo-text-color);
-  border: 1px solid var(--logo-text-color));
-
+  border: 1px solid var(--logo-text-color);
+  outline: none;
 }
 
 /* Оформление футера */
@@ -383,6 +387,15 @@ header {
   padding-bottom: 60px;
 
   background-color: var(--hero-footer-main-page);
+}
+
+.all-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.main-address {
+  margin-right: 70px;
 }
 
 .footer-logo {
@@ -403,7 +416,6 @@ header {
   line-height: 1.71;
 }
 
-.footer-address p,
 .footer-item:first-child {
   margin-bottom: 9px;
 }
@@ -413,6 +425,32 @@ header {
 
   color: var(--white-text-color-op);
   font-style: normal;
+}
+
+.add-text {
+  color: var(--white-text-color);
+
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.add-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--white-text-color);
+  border-radius: 50%;
+}
+
+.add-socials-link:hover,
+.add-socials-link:focus {
+  background-color: var(--logo-text-color);
+  outline: none;
 }
 
 /* Оформиление портфолио  */
