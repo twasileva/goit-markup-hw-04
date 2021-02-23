@@ -319,32 +319,26 @@ header {
 }
 
 .socials-link{
-  display: block;
-  
-}
-
-.thumb-socials{
   display: flex;
-  color: var(--icon-color-gray);
-  background-color: white;
-  border-radius: 50%; 
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-text-color);
+  fill: var(--icon-color-gray);
+  border-radius: 50%;
+
 }
 
-.thumb-link:hover{
-  color: white;
+.socials-link:hover{
+  fill: white;
   background-color: blue;
 }
 
 .icon-socials{
-  fill: currentColor;
+  width: 20px;
+  height: 20px;
 }
-
-
-.icon-socials:hover,
-.icon-socials:focus{
-  fill: currentColor;
-} 
-
 
 /* Наши клиенты */
 .clients {
